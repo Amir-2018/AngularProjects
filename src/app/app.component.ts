@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projetA'; 
+  test : string = 'Je suis le produit 1'
+  test2 : string = 'Je suis le produit 2'
+
+
 }
