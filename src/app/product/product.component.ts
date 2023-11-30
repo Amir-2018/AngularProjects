@@ -17,6 +17,7 @@ export class ProductComponent {
       { id : 1, title : "pull 2", price : 21, quantity : 10, like: 1},
       { id : 1, title : "pull 3", price : 16, quantity : 8, like: 2},
       ]
+      const a = 5 ; 
   }
 
 
