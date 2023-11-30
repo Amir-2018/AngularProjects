@@ -16,4 +16,10 @@ export class ProductComponent {
     quantity: 0,
     like: 0
   } ; 
+  @Output() EventEmetter = new EventEmitter<Product>() ; 
+
+  incEvent(value : Product) : void{
+    this.EventEmetter.emit(value)
+  }
+
 }

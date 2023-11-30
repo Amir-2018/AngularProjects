@@ -33,4 +33,10 @@ export class ListProductsComponentComponent {
       }
     ]
   }
+  // Increment product like 
+  incrementLike(p:Product){
+    console.log(p.title) ; 
+    p.like +=1; 
+  }
+
 }

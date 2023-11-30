@@ -1,5 +1,5 @@
 <div class="liste">
     <div *ngFor="let pr of ListProduct" >
-        <app-product [productObj] = "pr"></app-product>
+        <app-product [productObj] = "pr" (EventEmetter)="incrementLike(pr)"></app-product>
     </div>
 </div>
