@@ -1,4 +1,5 @@
 import { Component,Input,Output,EventEmitter} from '@angular/core';
+import { Product } from '../models/product';
 
 
 @Component({
@@ -8,10 +9,11 @@ import { Component,Input,Output,EventEmitter} from '@angular/core';
   
 })
 export class ProductComponent {
-  
-@Output() EventEmetter = new EventEmitter<string>() ; 
-
-add_in_event(elem : string){
-  this.EventEmetter.emit(elem) ; 
-}
+  @Input() productObj : Product  = {
+    id: 0,
+    title: '',
+    price: 0,
+    quantity: 0,
+    like: 0
+  } ; 
 }

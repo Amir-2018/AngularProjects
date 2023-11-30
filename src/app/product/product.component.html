@@ -6,8 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="txt" #newItem class="form-control" style="width: 200px;">
-    <br>
-    <button class="btn btn-success" (click)="add_in_event(newItem.value)">Add Item</button>
+    <div class="card" style="border: 1px solid black;width: 200px;height: 250px;">
+        <div class="id">{{productObj.id}}</div>
+        <div class="title">{{productObj.title}}</div>
+        <div class="price">{{productObj.price}}</div>
+        <div class="quantity">{{productObj.quantity}}</div>
+        <div class="like">{{productObj.like}}</div>
+    </div>
 </body>
 </html>

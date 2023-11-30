@@ -9,10 +9,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'projetA'; 
 
-  items = ['item1','item2','item3','item4']
-
-  Add_Item(item : string) : void{
-    this.items.push(item) ; 
-  }
 
 }
