@@ -6,8 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <app-product [item] = "test"></app-product>
-    <app-product [item] = "test2"></app-product>
-
+    <app-product (EventEmetter)="Add_Item($event)"></app-product>
+    <ul>
+        <li *ngFor="let elem of items" >{{elem}}</li>
+    </ul>
 </body>
 </html>

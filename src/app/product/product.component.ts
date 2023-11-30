@@ -9,6 +9,9 @@ import { Component,Input,Output,EventEmitter} from '@angular/core';
 })
 export class ProductComponent {
   
-@Input() item : string = '' ; 
+@Output() EventEmetter = new EventEmitter<string>() ; 
 
+add_in_event(elem : string){
+  this.EventEmetter.emit(elem) ; 
+}
 }
