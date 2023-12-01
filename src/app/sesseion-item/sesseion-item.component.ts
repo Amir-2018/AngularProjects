@@ -11,10 +11,20 @@ export class SesseionItemComponent {
 @Input() session_item : string = ''
 
 @Output() EventEmetter = new EventEmitter<any>() ; 
+hideButton : boolean = false ; 
 
-AddIntoEvent(val :any){
-  this.session.Participants ++ ; 
-  this.session.name = 'Formation web avancé '
+// @Input() Date_Formation : string = '' ; 
+
+
+InscriptionFunction(){
+  if(this.session.Participants ==20){
+    this.hideButton = true ; 
+  }else{
+    console.log('Inscription ajoutée')
+    this.session.participants ++ ; 
+    this.session.name = 'Formation web avancé '
+  }
+
 }
 
 @Input() session : any = {}

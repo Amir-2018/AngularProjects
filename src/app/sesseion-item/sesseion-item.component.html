@@ -1,13 +1,12 @@
 <div class="organizer">
-    <h2>{{session.name}}</h2>
+    <h4 >{{session.name}}</h4>
     <div>{{session.track}}</div>
     <div>{{session.date}}</div>
     <div>{{session.local}}</div>
-    <div>{{session.Participants}} Participants</div>
-    
+    <div> Participants {{session.participants}}</div>   
     <div class="tools">
       <a class="delete">Details</a>
-      <a class="inscrire" (click)="AddIntoEvent(session_item)">Inscription</a>
+      <a class="inscrire" (click)="InscriptionFunction()" [hidden]="hideButton">Inscription</a>
       <a class="partager">Partager</a>
     </div>
     

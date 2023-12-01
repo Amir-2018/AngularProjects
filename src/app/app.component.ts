@@ -8,23 +8,19 @@ import { AnyObject } from 'mongoose';
 })
 export class AppComponent {
   title = 'tp5';
-  typeformation  : string= 'Formation web' ; 
+  typeformation  : string= '   web' ; 
   // Function to modify the name 
 
   firstSession = {
     id: 1,
-    name : "Formation Web",
-    track: "Mean Steak",
-    date : "Prévue du 11/06/2023 au 15/06/2023",
-    local : "Lyon",
-    Participants : 0
+    name: 'Formation Web',
+    track: 'MEAN Stack',
+    date: ((((new Date('2018-06-13').toISOString().split('T')[0]).replaceAll('-',' | ')).split(' | ').reverse()).toString()).replaceAll(',',' | '),
+    duree: 3,
+    local: 'Lyon',
+    Participants: 0
     };
 
-  ModifyName(p : any){
-    console.log(this.typeformation)
-    this.typeformation = "Formation Web Avancé" ; 
-    // p.Participants ++ ;  
-    console.log("Nouvelle Inscription")
-  }  
+
 
 }

@@ -1,0 +1,11 @@
+<div *ngFor="let sessionItem of sessionItems" >
+    <app-sesseion-item 
+
+    [session]=  "sessionItem" 
+    [ngClass]="{
+        'web' : (sessionItem.name).toString() === 'Web',
+        'session-mobile':(sessionItem.name).toString()==='Mobile'
+    }">
+    </app-sesseion-item>
+    <!-- <p class="web">Test color</p> -->
+</div>

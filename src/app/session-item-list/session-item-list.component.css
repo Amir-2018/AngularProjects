@@ -1,0 +1,40 @@
+@import "../sesseion-item/sesseion-item.component.css";
+
+:host {
+    display: flex;
+    min-height: 90vh;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    /*border: 2px solid white;*/
+    gap: 20px;
+    flex-wrap: wrap;
+}
+header {
+color: #ffffff;
+padding: 10px;
+}
+header > h1 {
+font-size: 2em;
+}
+header .description {
+font-style: italic;
+}
+
+section {
+flex: 1;
+display: flex;
+flex-flow: row wrap;
+align-content: flex-start;
+}
+section > app-session-item {
+margin: 10px;
+}
+footer {
+text-align: right;
+}
+footer .icon {
+width: 64px;
+height: 64px;
+margin: 15px;
+}

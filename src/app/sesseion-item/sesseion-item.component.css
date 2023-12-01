@@ -12,13 +12,21 @@
     font-size: 1.6em;
     }
     :host.session-web {
-    border-color: #53ace4;
+    color: #53ace4;
     }
+    /* For ngClass Directive*/
+    .web {
+        color: #53ace4;
+    }
+    .session-mobile {
+        color: #45bf94;
+    }
+
     :host.session-web > h2 {
     color: #53ace4;
     }
     :host.session-mobile {
-    border-color: #45bf94;
+    color: #45bf94;
     }
     :host.session-mobile > h2 {
     color: #45bf94;
@@ -56,4 +64,9 @@ font-size: .8em;
 border-radius:
 4px;color: #ffffff;
 cursor: pointer;
+}
+.red{
+    color: green;
+    font-size: 25px;
+    font-weight: bold;
 }
